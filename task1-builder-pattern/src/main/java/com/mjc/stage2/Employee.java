@@ -105,5 +105,16 @@ public class Employee {
             this.carNumber = carNumber;
             return this;
         }
+
+        public Employee build() {
+            Employee employee = new Employee();
+            employee.name = this.name;
+            employee.email = this.email;
+            employee.carNumber = this.carNumber;
+            employee.phone = this.phone;
+            employee.position = this.position;
+            employee.lastName = this.lastName;
+            return employee;
+        }
     }
 }
